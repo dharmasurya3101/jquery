@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>select html elements </title>	
+<style>
+	.orangebox{
+		background-color: orange;
+		color: black;
+		height: auto;
+		width: 400px;
+	}
+	.whitebox{
+		background-color: whitesmoke;
+		color: blue;
+		height: auto;
+		width: 450px;
+	}
+	.greenbox{
+		background-color: lawngreen;
+		color: black;
+		height: auto;
+		width: 500px;
+	}
+	#SOCIALMEDIA{
+		background-color: red
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
+	</head>
+<body>
+<div class="orangebox">
+<p> FACEBOOK IS A <span id="SOCIALMEDIA">SOCIAL MEDIA.</span> APPLICATION	</p>
+	<p class="green">paragraph2</p>
+<p>paragraph 3</p>	
+</div>
+<div class="whitebox">
+<P> APPLE IS A COMPANY.</P>
+<ul>
+<li>Iphone x</li>
+<li>Iphone 11</li>
+<li>Iphone 11 pro</li>	
+</ul>	
+<p><a href="http://www.apple.com"> This is a link</a></p>
+<p><a href="http://www.itunes.com"> This is another link</a></p>	
+	</div>
+<p> a paragraph </p>	
+<div class="greenbox">
+<p> MICROSOFT IS A SOFTWARE.</p>
+<ul>
+<li>Windows 7</li>
+<li>Windows 8</li>
+<li>Windows10</li>	
+</ul>
+<table>
+    <tr><th>CAR COMPANY</th><th>CAR MODEL</th><th>CAR PRICE</th></tr>
+	<tr><td>HONDA</td><td>BRIO</td><td>5 lakh</td></tr>
+	<tr><td>HONDA</td><td>JAZZ</td><td>7 lakh</td></tr>
+	<tr><td>HONDA</td><td>AMAZE</td><td>9 lakh</td></tr>
+	<tr><td>HONDA</td><td>WR-V</td><td>11 lakh</td></tr>
+	<tr><td>HONDA</td><td>CITY</td><td>13 lakh</td></tr>
+	<tr><td>HONDA</td><td>BR-V</td><td>15 lakh</td></tr>
+	<tr><td>HONDA</td><td>CIVIC</td><td>17 lakh</td></tr>
+
+</table>
+<p> Type Your Name:<input><button type="Submit">Submit</button></p>		
+</div>	
+<script>
+ $(function(){
+$("*").css("font-size", '16px');
+	 
+//$("p").css("text-align", "center");
+//$("div ~ p").css("text-align", "center");
+$("div  p").css("text-align", "center");
+	 
+$("#SOCIALMEDIA").css("background-color", "red");
+$(".green").css("background-color", "green");
+$("div.orangebox").css("font-family", "sans-serif");
+
+$("p:first-child, p:last-child").css("text-decoration", "underline"); 
+	 
+$("[href]").css("color", "red"); 
+	 
+$("li:first-child, li:last-child").css("background-color", "yellow");
+	 
+$("tr:even").css("background-color", "lightblue"); 
+	 
+$("tr:odd").css("background-color", "lightpink"); 
+	 
+$(":input").css("background-color", "silver");
+$(":Submit").css("background-color", "gold"); 	
+$("div:has(table)").css("background-color", "green");	 
+ });	
+	</script>	
+	</body>	
+</html>

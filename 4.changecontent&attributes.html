@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>select html elements </title>	
+<style>
+	.orangebox{
+		background-color: orange;
+		color: black;
+		height: 100px;
+		width: 400px;
+	}
+	.whitebox{
+		background-color: whitesmoke;
+		color: blue;
+		height: 100px;
+		width: 450px;
+	}
+	.greenbox{
+		background-color: lawngreen;
+		color: black;
+		height: 100px;
+		width: 500px;
+	}
+	#SOCIALMEDIA{
+		background-color: red
+	}
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
+	</head>
+<body>
+	<div class="orangebox" id="FACEBOOK">
+<p> FACEBOOK IS A <span id="SOCIALMEDIA">SOCIAL MEDIA.</span> APPLICATION	</p>
+</div>
+<div class="whitebox" id="APPLE">
+<P> APPLE IS A COMPANY.</P>
+</div>
+	
+<div class="greenbox">
+<p> MICROSOFT IS A SOFTWARE.</p>	
+</div>	
+
+<button id="changeFACEBOOK">Change FACEBOOK Text.</button>
+<button id="changeAPPLE">CHANGE APPLE CONTENT.</button>
+
+	</body>
+<script>
+$(function(){
+$("#changeFACEBOOK").click(function(){
+$("#FACEBOOK").text("THIS IS FACEBOOK.");	
+});	
+$("#changeAPPLE").click(function(){
+$("#APPLE").html("<p> THIS IS APPLE</p><p> NEW IOS AVAILABLE</P>");	
+});
+						
+});
+
+
+</script>	
+		
+</html>
